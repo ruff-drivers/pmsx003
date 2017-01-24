@@ -28,6 +28,10 @@ Parser.prototype.readLength = function () {
 Parser.prototype.readData = function () {
     if (this._buf.length >= this._nByte) {
         var lst = parseBuffer(this._buf);
+        if (!lst) { 
+            this._emit('error');
+            return;
+        }
         var json = parseData(lst);
         if (json) {
             this._emit('data', json);

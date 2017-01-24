@@ -26,6 +26,7 @@ module.exports = driver({
     },
 
     events: {
-        data: 'emit on data received'
+        data: 'emit on data received',
+        error: 'emit on corrupt data'
     }
 });
