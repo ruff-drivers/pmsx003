@@ -2,5 +2,8 @@
     "name": "pmsx003",
     "version": "0.1.0",
     "description": "Plantower's PM2.5 sensor driver",
-    "author": "ruff"
+    "author": "ruff",
+    "scripts": {
+        "test": "ruff ./test/test-parser.js"
+    }
 }
