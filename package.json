@@ -2,7 +2,24 @@
     "name": "pmsx003",
     "version": "0.1.0",
     "description": "Plantower's PM2.5 sensor driver",
-    "author": "ruff",
+    "author": "Nanchao Inc.",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ruff-drivers/pmsx003.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ruff-drivers/pmsx003/issues"
+    },
+    "homepage": "https://github.com/ruff-drivers/pmsx003",
+    "keywords": [
+        "PM2.5",
+        "UART"
+    ],
+    "main": "src/index.js",
+    "engines": {
+        "ruff": ">=1.2.0 <1.7.0"
+    },
     "scripts": {
         "test": "ruff ./test/test-parser.js"
     }
