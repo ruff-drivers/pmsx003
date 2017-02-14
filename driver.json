@@ -1,5 +1,5 @@
 {
-    "models": ["PMS1003", "PMS2003", "PMS3003"],
+    "models": ["PMS1003", "PMS3003"],
     "inputs": {
         "uart": {
             "type": "uart",
