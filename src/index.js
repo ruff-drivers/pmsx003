@@ -9,11 +9,16 @@ module.exports = driver({
         var self = this;
         var uart = inputs['uart'];
         var parser = new Parser(self.emit.bind(self));
+        var isProcessing = false;
 
         setInterval(function () {
-            uart.read(function (err, data) {
-                parser.feed(data);
-            });
+            if (!isProcessing) {
+                isProcessing = true;
+                uart.read(function (err, data) {
+                    parser.feed(data);
+                    isProcessing = false;
+                });
+            }
         }, INTERVAL);
 
     },

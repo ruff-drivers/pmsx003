@@ -1,6 +1,6 @@
 {
     "name": "pmsx003",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Plantower's PM2.5 sensor driver",
     "author": "Nanchao Inc.",
     "license": "MIT",
