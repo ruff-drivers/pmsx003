@@ -25,11 +25,15 @@ Parser.prototype.readLength = function () {
     }
 }
 
+Parser.prototype.readError = function (error) {
+    this._emit('error', error);
+};
+
 Parser.prototype.readData = function () {
     if (this._buf.length >= this._nByte) {
         var lst = parseBuffer(this._buf);
         if (!lst) { 
-            this._emit('error');
+            this.readError(new Error('parse buffer failed'));
             return;
         }
         var json = parseData(lst);
