@@ -4,7 +4,7 @@ Plantower's PM2.5 Sensor Driver with UART interface.
 
 ## Supported Engines
 
-* Ruff: >=1.7.0 
+* Ruff: >=1.9.0
 
 ## Supported Models
 
@@ -42,7 +42,7 @@ pm25.on('data', function(data){console.log(data);});
 Adds a listener to the end of the listeners array for the specified event.
 
 - **event** The event name enrolled in driver, it is a string, and should be 'data' or 'error'.
-- **listener**  The callback that takes the first argument as the possible error if the event is 'error', and as the data reported by driver if the event is 'data'. 
+- **listener**  The callback that takes the first argument as the possible error if the event is 'error', and as the data reported by driver if the event is 'data'.
 
 
 ## Contributing
